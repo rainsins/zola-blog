@@ -1,0 +1,86 @@
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=rust"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=anaconda"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=arch"
+
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=bash"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=bun"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=cpp"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=debian"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=deno"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=docker"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=git"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=github"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=ai"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=js"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=linux"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=neovim"
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=typescript"
+
+
+[[collection]]
+type = "entry"
+link = "https://example.com"
+icon = "https://skillicons.dev/icons?i=wasm"
