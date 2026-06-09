@@ -1,4 +1,4 @@
-base_url = "https://blog.rainsin.cn"
+base_url = "https://blog.rainsin.top"
 title = "cogito"
 description = "cogito's blog"
 default_language = "zh"   # 改成 zh，cn 不是合法的语言代码
