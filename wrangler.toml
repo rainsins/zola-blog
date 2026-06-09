@@ -1,4 +1,5 @@
-name = "blog"
+# wrangler.toml
+name = 'zola-blog'
 compatibility_date = "2026-01-22"
 
 [build]
