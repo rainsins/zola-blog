@@ -8,7 +8,7 @@ lang = "en"
 
 title = "Blogroll"
 subtitle = "My blogroll list"
-
+comment = true
 +++
 
 ## Bookmarks
