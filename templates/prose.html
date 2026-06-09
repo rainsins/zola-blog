@@ -52,13 +52,13 @@
       <div id="copy-cfg" style="display: none;" data-copy-icon="{{ copy_icon }}" data-check-icon="{{ check_icon }}"></div>
       {% endif %}
       <article class="prose
-        {% if page.extra.charch %} charch{% endif %}
-        {% if page.extra.indent %} charch-indent{% endif %}
-        {% if page.extra.pseudo %} charch-pseudo{% endif %}
-        {% if page.extra.cjk_latin_space %} charch-cjk-latin-space{% endif %}
-        {% if page.extra.bracket_replace %} charch-bracket-replace{% endif %}
-        {% if page.extra.link_space %} charch-link-space{% endif %}
-        {% if page.extra.line_height %} charch-line-height{% endif %}
+        {%- if page.extra.charch %} charch{% endif %}
+        {%- if page.extra.indent %} charch-indent{% endif %}
+        {%- if page.extra.pseudo %} charch-pseudo{% endif %}
+        {%- if page.extra.cjk_latin_space %} charch-cjk-latin-space{% endif %}
+        {%- if page.extra.bracket_replace %} charch-bracket-replace{% endif %}
+        {%- if page.extra.link_space %} charch-link-space{% endif %}
+        {%- if page.extra.line_height %} charch-line-height{% endif %}
       ">
         {{ section.content | safe }}
       </article>
