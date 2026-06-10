@@ -87,4 +87,57 @@
   mermaid.initialize({ startOnLoad: true });
 </script>
 {% endif %}
+
+{% if page.extra.comment %}
+<link rel="stylesheet" href="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.css">
+<script src="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-music.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-video.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-file.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-pan.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.8.3/plyr.min.js" integrity="sha512-Eeu7Wo2Jjbcc0N9faybH9EV8Fzoib0EBnibkNSehxBy55KKsR9PMvbGctyLEe3vla6J/UzEft5f2JZ9gYN55AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.8.3/plyr.css" integrity="sha512-qQVHM49OSnTirkDnnX8DpwzCYdY9Xlyny22edmRdRmb1Q2k6bbNwKqBoOn1k9Ydg4sYFdoiKszuoYYHwwS2kVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/5.0.3/legacy/umd/dash.all.min.js" integrity="sha512-mxanrnY5ByribU+TdQBIIP0ittyrijKFaejemrQXWSB9/n1wTCYMACfgvbSiw+IbszttkJsuG43c9doktU7+Fw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.6.13/hls.min.js" integrity="sha512-LEIm1W/PgFJKoWrbqOV4WGAC0qOYd6ZC6MxoWgs7PDSY1iwhGaaLfjyq1Nwb/jiZM0kJKn3rqOQfXZqi40YUEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flv.js/1.6.2/flv.min.js" integrity="sha512-49OFf+8jaHx4Vb7iFNb46Loq1pIxXlEYeVOQRIx0KLBRF4KSV6E7QK2Vw5r416TQDyBJW+DFh2CyTV7+gCWd6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    Artalk.use(ArtalkPlugins.ArtalkMusicPlugin);
+    Artalk.use(ArtalkPlugins.ArtalkVideoPlugin);
+    Artalk.use(ArtalkPlugins.ArtalkFileSharePlugin);
+    Artalk.use(ArtalkPlugins.ArtalkNetdiskPlugin);
+
+    const artalk = Artalk.init({
+      el: '#artalk',
+      pageKey: window.location.pathname,
+      pageTitle: document.title,
+      server: 'https://waline.cpolar.cn',
+      darkMode: document.body.classList.contains('dark'),
+      site: 'Rainsin\'s Blog'
+    });
+
+    // 隐藏版权
+    const hideCopyright = () => {
+      const el = document.getElementsByClassName('atk-copyright')[0];
+      if (el) el.style.display = 'none';
+    };
+    hideCopyright();
+
+    // 暗色模式同步——监听 Serene 的主题切换按钮
+    const themeBtn = document.querySelector('#theme-toggle, .theme-toggle, [data-theme-toggle]');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        // Serene 切换后 body.dark 会变，延迟一帧读取
+        requestAnimationFrame(() => {
+          artalk.update({
+            darkMode: document.body.classList.contains('dark'),
+          });
+          hideCopyright();
+        });
+      });
+    }
+  });
+</script>
+{% endif %}
 {% endblock script %}
