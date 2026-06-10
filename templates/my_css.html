@@ -1,0 +1,52 @@
+<style>
+    .prose {
+        font-feature-settings: "chws" 1; /* 标点自动挤压 */
+        text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
+            ideograph-numeric;
+    }
+    /* 正文段落 */
+    .prose:not(#brief) p {
+        /*text-indent: 2em;*/
+        line-height: 1.75;
+        font-family: "Literata", "KingHwa_OldSong", "FZZhuZiAOldMincho", serif;
+        /*margin: 0.6em 0; */
+        font-size: 1.06em; /* 取消注释，1rem 比 1.125 更舒适 */
+    }
+    .prose:not(#brief) blockquote:not(.quote) p {
+        text-indent: 0;
+    }
+
+    .prose .quote {
+        padding: 2em 2em;
+        background-color: var(--quote-bg-color);
+        color: var(--quote-text-color);
+    }
+    /* 引用块内段落 - Times New Roman 换成 Literata 更统一 */
+    .prose:not(#brief) .quote .content p {
+        font-family: "Literata", "KT", "KingHwa_OldSong", serif;
+        /*text-indent: 2em;*/
+        line-height: 1.75;
+        font-size: 1.05em; /* 引用块略小，和正文区分层次 */
+    }
+
+    .prose:not(#brief) .quote .from p {
+        font-family: "Times New Roman", "FS", "STFS", serif;
+        font-style: normal;
+        margin-top: 0.7em;
+        text-indent: 0; /* 署名行不缩进 */
+        text-align: right; /* 署名靠右更典雅 */
+        font-size: 0.96em;
+    }
+
+    /* body 行高收紧，1.85 偏松 */
+    body {
+        font-family: "Literata", "KingHwa_OldSong", "FZZhuZiAOldMincho", serif;
+        line-height: 1.75; /* 从 1.85 收到 1.75 */
+        font-size: 1rem; /* 取消注释 */
+    }
+
+    .text-indent-2em {
+        display: inline-block;
+        text-indent: 2em; /* 段落首行缩进 */
+    }
+</style>

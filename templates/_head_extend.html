@@ -32,27 +32,27 @@
 <!-- 方正筑紫老明朝 -->
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoR/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoR/result.css"
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoL/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoL/result.css"
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoM/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoM/result.css"
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoB/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoB/result.css"
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoD/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoD/result.css"
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZZhuZiAOldMinchoE/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/FZZhuZiAOldMincho/FZFWZhuZiAOldMinchoE/result.css"
 />
 
 <link
@@ -61,13 +61,13 @@
 />
 
 <link
-    href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap"
+    href="https://google-fonts.mirrors.sjtug.sjtu.edu.cn/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap"
     rel="stylesheet"
 />
 
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/simfang/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/simfang/result.css"
 />
 
 <link
@@ -76,7 +76,7 @@
 />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/simkai/result.css"
+    href="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/fonts/simkai/result.css"
 />
 
 <script src="/js/core.js"></script>
@@ -87,73 +87,15 @@
         text-indent: 2em;
     }
 </style>
-{% endif %}
-<style>
-    .prose {
-        font-feature-settings: "chws" 1; /* 标点自动挤压 */
-        text-spacing: trim-start allow-end trim-adjacent ideograph-alpha
-            ideograph-numeric;
-    }
-    /* 正文段落 */
-    .prose:not(#brief) p {
-        /*text-indent: 2em;*/
-        line-height: 1.75;
-        font-family: "Literata", "KingHwa_OldSong", "FZZhuZiAOldMincho", serif;
-        /*margin: 0.6em 0; */
-        font-size: 1.06em; /* 取消注释，1rem 比 1.125 更舒适 */
-    }
-    .prose:not(#brief) blockquote:not(.quote) p {
-        text-indent: 0;
-    }
+{% endif %} {% include "my_css.html" %}
 
-    .prose .quote {
-        padding: 2em 2em;
-        background-color: var(--quote-bg-color);
-        color: var(--quote-text-color);
-    }
-    /* 引用块内段落 - Times New Roman 换成 Literata 更统一 */
-    .prose:not(#brief) .quote .content p {
-        font-family: "Literata", "KT", "KingHwa_OldSong", serif;
-        /*text-indent: 2em;*/
-        line-height: 1.75;
-        font-size: 1.05em; /* 引用块略小，和正文区分层次 */
-    }
-
-    .prose:not(#brief) .quote .from p {
-        font-family: "Times New Roman", "FS", "STFS", serif;
-        font-style: normal;
-        margin-top: 0.7em;
-        text-indent: 0; /* 署名行不缩进 */
-        text-align: right; /* 署名靠右更典雅 */
-        font-size: 0.96em;
-    }
-
-    /* body 行高收紧，1.85 偏松 */
-    body {
-        font-family: "Literata", "KingHwa_OldSong", "FZZhuZiAOldMincho", serif;
-        line-height: 1.75; /* 从 1.85 收到 1.75 */
-        font-size: 1rem; /* 取消注释 */
-    }
-
-    .text-indent-2em {
-        display: inline-block;
-        text-indent: 2em; /* 段落首行缩进 */
-    }
-
-    /* 中文字号略缩小，平衡视觉重量 */
-    /*:lang(zh) {
-            font-size: 1em !important;
-        }*/
-</style>
-
-{% block script %}
 <!-- 1. 依赖库，按需加载 -->
 {% if page.extra.heti or page.extra.charch %}
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 {% endif %} {% if page.extra.heti %}
 <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css" />
 <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 <script>
     const _heti = new Heti(".heti-box");
     onDomReady(function () {
@@ -161,4 +103,4 @@
         _heti.autoSpacing(); // 自动进行中西文混排美化和标点挤压
     });
 </script>
-{% endif %}{% endblock script %}
+{% endif %} {% include "head_comment.html" %}
