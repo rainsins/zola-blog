@@ -15,7 +15,6 @@ avatar = "img/avatar.png"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/rainsins" },
     { name = "Email", icon = "email", url = "mailto:1820278582@qq.com" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/2000_python" },
 ]
 
 # Show a few recent posts in home page
