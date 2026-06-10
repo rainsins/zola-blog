@@ -68,9 +68,8 @@
       <div class="reaction {{ config.extra.reaction_align }}" data-endpoint="{{ config.extra.reaction_endpoint }}"></div>
       {% endif %}
 
-      {% if section.extra.comment %}
-      <div class="giscus"></div>
-      {% include "_giscus_script.html" %}
+      {% if page.extra.comment or section.extra.comment %}
+      <div id="artalk"></div>
       {% endif %}
     </div>
 
@@ -88,7 +87,7 @@
 </script>
 {% endif %}
 
-{% if page.extra.comment %}
+{% if page.extra.comment or section.extra.comment %}
 <link rel="stylesheet" href="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.css">
 <script src="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-music.js"></script>
