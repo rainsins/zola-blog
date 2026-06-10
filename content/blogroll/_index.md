@@ -5,7 +5,6 @@ template = "prose.html"
 
 [extra]
 lang = "en"
-
 title = "Blogroll"
 subtitle = "My blogroll list"
 comment = true
