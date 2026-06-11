@@ -1,0 +1,99 @@
+/* ===== 字体 ===== */
+@font-face {
+    font-family: "cjpxk";
+    src: url(https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZJ-CJPXKJW.woff2);
+    font-display: swap;
+}
+
+/* ===== 诗词框 ===== */
+.poem-box {
+    font-family: "cjpxk", serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.poem-box div {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== 遮罩文字（可点击复制）===== */
+.mask-text {
+    mask-image: url(https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/mask.png);
+    border: 2px solid;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* ===== Tippy 主题 ===== */
+.tippy-box[data-theme~="mmmm"] {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: #fff;
+}
+.tippy-box[data-theme~="mmmm"][data-placement^="top"] > .tippy-arrow::before {
+    border-top-color: #a18cd1;
+}
+
+/* ===== Gallery ===== */
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    aspect-ratio: 1 / 0.5;
+    margin-bottom: 20px;
+}
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+}
+.item:hover {
+    flex: 7;
+}
+
+.item-1 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%2835%29.webp");
+}
+.item-2 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%2830%29.webp");
+}
+.item-3 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%285%29.webp");
+}
+.item-4 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/C%20%2839%29.webp");
+}
+.item-5 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/C%20%2837%29.webp");
+}
+.item-6 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/photo_2022-09-16_13-02-49.webp");
+}
+.item-7 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%282%29.webp");
+}
+.item-8 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%288%29.webp");
+}
+.item-9 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%289%29.webp");
+}
+.item-10 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%2844%29.webp");
+}
+.item-11 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%2873%29.webp");
+}
+.item-12 {
+    background-image: url("https://source.vip.cpolar.cn/%E5%86%99%E7%9C%9F/banner/c%20%2829%29.webp");
+}
