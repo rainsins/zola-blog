@@ -1,6 +1,6 @@
 +++
 title = "About Me & Site"
-description = "About cogito's Blog"
+description = "About rainsin's Blog"
 template = "prose.html"
 insert_anchor_links = "none"
 [extra]
@@ -14,9 +14,7 @@ comment = false
 reaction = false
 +++
 
-出生在千禧年。
 
-用八字推出我是 INTP。
 
 这个世界诸多的不幸与苦难，都是我的精神的牛虻，它不断刺痛我的灵魂，驱使我不断前进；也不断向我诘问，迫使我沉思。
 

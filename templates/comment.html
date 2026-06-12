@@ -1,42 +1,51 @@
 {% if page.extra.comment or section.extra.comment %}
+{% set plugins = page.extra.comment_plugins | default(value=[]) %}
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+        {% if "music" in plugins %}
         Artalk.use(ArtalkPlugins.ArtalkMusicPlugin);
+        {% endif %}
+        {% if "video" in plugins %}
         Artalk.use(ArtalkPlugins.ArtalkVideoPlugin);
+        {% endif %}
+        {% if "file" in plugins %}
         Artalk.use(ArtalkPlugins.ArtalkFileSharePlugin);
+        {% endif %}
+        {% if "pan" in plugins %}
         Artalk.use(ArtalkPlugins.ArtalkNetdiskPlugin);
+        {% endif %}
 
-        const artalk = Artalk.init({
-            el: "#artalk",
-            pageKey: window.location.pathname,
-            pageTitle: document.title,
-            server: "https://waline.cpolar.cn",
-            darkMode: document.body.classList.contains("dark"),
-            site: "Rainsin's Blog",
-        });
-
-        // 隐藏版权
-        const hideCopyright = () => {
-            const el = document.getElementsByClassName("atk-copyright")[0];
-            if (el) el.style.display = "none";
-        };
-        hideCopyright();
-
-        // 暗色模式同步——监听 Serene 的主题切换按钮
-        const themeBtn = document.querySelector(
-            "#theme-toggle, .theme-toggle, [data-theme-toggle]",
-        );
-        if (themeBtn) {
-            themeBtn.addEventListener("click", () => {
-                // Serene 切换后 body.dark 会变，延迟一帧读取
-                requestAnimationFrame(() => {
-                    artalk.update({
-                        darkMode: document.body.classList.contains("dark"),
-                    });
-                    hideCopyright();
-                });
+            const artalk = Artalk.init({
+                el: "#artalk",
+                pageKey: window.location.pathname,
+                pageTitle: document.title,
+                server: "https://waline.cpolar.cn",
+                darkMode: document.body.classList.contains("dark"),
+                site: "Rainsin's Blog",
             });
-        }
-    });
+
+            // 隐藏版权
+            const hideCopyright = () => {
+                const el = document.getElementsByClassName("atk-copyright")[0];
+                if (el) el.style.display = "none";
+            };
+            hideCopyright();
+
+            // 暗色模式同步——监听 Serene 的主题切换按钮
+            const themeBtn = document.querySelector(
+                "#theme-toggle, .theme-toggle, [data-theme-toggle]",
+            );
+            if (themeBtn) {
+                themeBtn.addEventListener("click", () => {
+                    // Serene 切换后 body.dark 会变，延迟一帧读取
+                    requestAnimationFrame(() => {
+                        artalk.update({
+                            darkMode: document.body.classList.contains("dark"),
+                        });
+                        hideCopyright();
+                    });
+                });
+            }
+        });
 </script>
 {% endif %}

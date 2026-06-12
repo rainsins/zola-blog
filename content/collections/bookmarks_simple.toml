@@ -1,44 +1,59 @@
 [[collection]]
 type = "entry"
-link = "https://johnresig.com/blog/write-code-every-day"
-title = "Write Code Every Day"
-subtitle = "John Resig"
+link = "https://www.3blue1brown.com"
+title = "3b1b"
+subtitle = "数学可视化频道"
 
 [[collection]]
 type = "entry"
-link = "https://overreacted.io/the-elements-of-ui-engineering"
-title = "The Elements of UI Engineering"
-subtitle = "Dan Abramov"
+link = "https://terrytao.wordpress.com/"
+title = "陶哲轩的博客"
+subtitle = "有他的最新数学研究和其他学习相关的观点"
 
 [[collection]]
 type = "entry"
-title = "Teach Yourself Programming in Ten Years"
-link = "https://norvig.com/21-days.html"
-subtitle = "Peter Norvig"
+title = "Archive"
+link = "https://archive.org"
+subtitle = "绝版东西的网站，比如绝版书的影印本。"
 
 [[collection]]
 type = 'br'
 
 [[collection]]
 type = "entry"
-link = "https://www.scattered-thoughts.net/writing/reflections-on-a-decade-of-coding"
-title = "Reflections on a decade of coding"
-subtitle = "Jamie Brandon"
+link = "https://ribbonfarm.com"
+title = "Ribbonfarm"
+subtitle = "Venkatesh Rao的博客，擅长从奇怪角度构建概念体系。风格强烈。"
 
 [[collection]]
 type = "entry"
-link = "https://www.ee.torontomu.ca/~elf/hack"
-title = "Hacker's Wisdom"
-subtitle = "~elf/hack"
+link = "https://gwern.net"
+title = "Gwern's Wisdom"
+subtitle = "风格强烈的博客，“个人思想基础设施” 的网站，排版挺好，文章信息密度高。挺不错！"
 
 [[collection]]
 type = "entry"
-link = "https://drmingdrmer.github.io/tech/bla/2018/09/27/toaster.html"
-title = "软件工程是个面包机"
-subtitle = "drmingdrmer.github.io"
+link = "https://meaningness.com"
+title = "Meaningness"
+subtitle = "讨论意义、存在、佛教认识论与分析哲学的交叉。"
+
+[[collection]]
+type = 'br'
 
 [[collection]]
 type = "entry"
-link = "https://shud.in/thoughts/the-non-existing-nostalgic"
-title = "不存在的乡愁"
-subtitle = "shud.in"
+link = "https://philosophybites.com"
+title = "Philosophybites"
+subtitle = "讨论哲学问题的博客，有对应的文字。"
+
+[[collection]]
+type = "entry"
+link = "https://philpapers.org"
+title = "PhilPapers"
+subtitle = "哲学论文数据库，可以搜索哲学论文。"
+
+[[collection]]
+type = "entry"
+link = "https://www.shuge.org"
+title = "书格"
+subtitle = "开放式分享、介绍、推荐有价值的古籍善本、字画。"

@@ -12,6 +12,7 @@ toc = false
 math = false
 mermaid = false
 comment = true
+comment_plugins = ["music", "video", "file", "pan"]
 pangu = false
 charch = false
 indent = false

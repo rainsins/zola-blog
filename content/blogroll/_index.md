@@ -18,6 +18,10 @@ comment = true
 
 {{ collection(file="blogroll.toml") }}
 
+## Blog Collections
+
+{{ collection(file="blogcollentions.toml") }}
+
 ## My information
 
 ```json

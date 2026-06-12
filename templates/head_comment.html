@@ -1,42 +1,40 @@
 {% if page.extra.comment or section.extra.comment %}
-<script src="https://cdn.staticfile.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.css"
-/>
-<script src="https://unpkg.com/artalk@2.9.1/dist/ArtalkLite.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-music.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-video.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-file.js"></script>
-<script src="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-pan.js"></script>
-
 <script
-    src="https://cdn.jsdelivr.net/npm/plyr@3.8.4/dist/plyr.polyfilled.min.js"
-    integrity="sha256-dfVaeqRn/R3WScwi/Z8nqVsy9XNRc8u6DRV0IoeoeTk="
+    src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
     crossorigin="anonymous"
 ></script>
+<script src="https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.min.css">
+
+{% set plugins=page.extra.comment_plugins | default(value=[]) %}
+
+{% if "video" in plugins %}
+<script src="https://fastly.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/hls.js@1.6.16/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dashjs@5.2.0/dist/legacy/umd/dash.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.8.4/dist/plyr.polyfilled.min.js"></script>
 <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/plyr@3.8.4/dist/plyr.min.css"
 />
+{% endif %}
 
-<script
-    src="https://cdn.jsdelivr.net/npm/dashjs@5.2.0/dist/legacy/umd/dash.all.min.js"
-    integrity="sha256-msusEBfIDw1F05M5JazDQHU8p3ueVujQz/JSk7ZNFzI="
-    crossorigin="anonymous"
-></script>
+{% if "music" in plugins %}
+<script src="https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-music.js"></script>
+{% endif %}
 
-<script
-    src="https://gcore.jsdelivr.net/npm/hls.js@1.6.16/dist/hls.min.js"
-    integrity="sha256-RC9ZnDTxA8M1WzdaI73/VgWS1xF9CajIRyQuo94tQOA="
-    crossorigin="anonymous"
-></script>
+{% if "video" in plugins %}
+<script src="https://gcore.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-video.js"></script>
+{% endif %}
 
-<script
-    src="https://fastly.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"
-    integrity="sha256-czubMl28WYcaZSwKhPLyhaLP0Gzy787c2Hyx4ZTNHo8="
-    crossorigin="anonymous"
-></script>
+{% if "file" in plugins %}
+<script src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-file.js"></script>
+{% endif %}
+
+{% if "pan" in plugins %}
+<script src="https://cdn.jsdmirror.com/gh/rainsins/blog-npm-source@main/npm/artalk-plugin/artalk-plugin-pan.js"></script>
+{% endif %}
 
 <style>
     .atk-main-editor {
