@@ -54,6 +54,6 @@ reaction = false
 
 ## Contact
 
- - Email: 1820278582(at)qq.com
+ - Email： 1820278582(at)qq.com
  - Github： [Rainsin's Github](https://github.com/rainsins/zola-blog)
  - 有问题可以通过邮箱联系我，或者在blogroll中留言，也可以直接在github上给我提issue。
