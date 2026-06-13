@@ -10,6 +10,8 @@ subtitle = "My blogroll list"
 comment = true
 +++
 
+
+
 ## Bookmarks
 
 {{ collection(file="bookmarks_simple.toml") }}
@@ -22,8 +24,11 @@ comment = true
 
 {{ collection(file="blogcollentions.toml") }}
 
-## My information
+## Note
 
+这里的链接都是我读过、觉得有意思才加的，没有申请通道。如果想聊，欢迎来信。
+
+{% detail(title="My information") %} 
 ```json
 {
     name: "cogito",
@@ -33,5 +38,6 @@ comment = true
     email: "rainsin(at)qq.com"
 }
 ```
+{% end %} 
 
 ## Message Board
