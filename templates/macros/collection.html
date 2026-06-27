@@ -110,7 +110,10 @@
 
 
 {% macro art(item) %}
-<blockquote class="collection art">
+<blockquote class="collection art"
+    {% if item.code %}
+    title="{{ item.code }}"
+    {% endif %}>
   <div class="img-wrapper">
     <img src="{{ item.img }}" alt="{{ item.title }}" height="175">
   </div>
@@ -135,7 +138,11 @@
 
 
 {% macro art_simple(item) %}
-<blockquote class="collection art-simple">
+<!-- {{ item.code }} -->
+<blockquote class="collection art-simple"
+    {% if item.code %}
+    title="{{ item.code }}"
+    {% endif %}>
   <div class="img-wrapper">
     <img src="{{ item.img }}" alt="{{ item.title }}" height="175">
   </div>

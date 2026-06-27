@@ -1,9 +1,9 @@
 /* base
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-*,
-*::before,
-*::after {
+/* @import "_photosets.scss" */
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -1868,4 +1868,36 @@ template {
 
 [hidden] {
     display: none;
+}
+
+
+/* add */
+
+.collection-wrapper--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(115px + 1em), 1fr));
+  gap: 4px;
+}
+
+/* 文本列表保持默认流体 */
+.collection-wrapper--entries {
+  display: block;
+}
+
+.prose .collection.art-simple a.title{
+    text-align: center;
+}
+
+.prose .footnote-definition p {
+    text-indent: 0 !important;
+    font-family: "FS" !important;
+}
+
+.prose .footnote-definition button.backlink {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }

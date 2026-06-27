@@ -12,12 +12,9 @@ subtitle = "My list"
 +++
 
 ## Bookmarks
+
 {{ collection(file="bookmarks_simple.toml") }}
 
-## Books
+## Photographic Testimony
 
-{{ collection(file="books.toml") }}
-
-## Movies
-
-{{ collection(file="movies.toml") }}
+{{ collection(file="photosets.toml") }}

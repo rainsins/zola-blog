@@ -1,0 +1,32 @@
+{% import 'macros/collection.html' as marcos -%}
+{% set data = load_data(path="content" ~ section.path ~ file, format="toml") %}
+
+{# 获取第一个元素的类型来确定布局 #}
+{% set collection_type = data.collection[0].type %}
+{% set wrapper_class = "collection-wrapper" %}
+
+{% if collection_type == "card" or collection_type == "art" or collection_type == "art_simple" %}
+  {% set wrapper_class = "collection-wrapper collection-wrapper--grid" %}
+{% elif collection_type == "entry" %}
+  {% set wrapper_class = "collection-wrapper collection-wrapper--entries" %}
+{% endif %}
+
+<section class="{{ wrapper_class }}">
+{% for item in data.collection %}
+  {% if item.type == "card" %}
+    {{ marcos::card(item=item) }}
+  {% elif item.type == "card_simple" %}
+    {{ marcos::card_simple(item=item) }}
+  {% elif item.type == "entry" %}
+    {{ marcos::entry(item=item) }}
+  {% elif item.type == "box" %}
+    {{ marcos::box(item=item) }}
+  {% elif item.type == "art" %}
+    {{ marcos::art(item=item) }}
+  {% elif item.type == "art_simple" %}
+    {{ marcos::art_simple(item=item) }}
+  {% elif item.type == "br" %}
+    <br />
+  {% endif %}
+{% endfor %}
+</section>

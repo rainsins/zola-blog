@@ -11,11 +11,6 @@ comment = true
 +++
 
 
-
-## Bookmarks
-
-{{ collection(file="bookmarks_simple.toml") }}
-
 ## Blogroll
 
 {{ collection(file="blogroll.toml") }}
@@ -26,7 +21,7 @@ comment = true
 
 ## Note
 
-这里的链接都是我读过、觉得有意思才加的，没有申请通道。如果想聊，欢迎来信。
+没有申请通道。如果想聊，欢迎来信。
 
 {% detail(title="My information") %} 
 ```json
