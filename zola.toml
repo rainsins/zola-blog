@@ -1,18 +1,18 @@
 base_url = "https://blog.rainsin.cn"
-title = "cogito"
-description = "cogito's blog"
+title = "Rainsin • Blog｜Cogito｜一个粗糙的简单的小博客，分享乐趣。 "
+description = " 这里是一个粗糙的个人博客，Zola 驱动，使用 serene 主题，这里还是一个试验场，会有哲学、技术、爱好之内的内容。"
 default_language = "zh"   # 改成 zh，cn 不是合法的语言代码
 theme = "serene"
 output_dir = "public"
 compile_sass = true
-minify_html = false
+minify_html = true
 build_search_index = false
 generate_feeds = false
 feed_filenames = ["feed.xml"]
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
-render_emoji = false
+render_emoji = true
 external_links_target_blank = false
 external_links_no_follow = true
 external_links_no_referrer = true

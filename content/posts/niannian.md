@@ -1,5 +1,5 @@
 +++
-title = "「神秘」年年的高雅集"
+title = "年年的高雅集"
 date = 2026-05-22
 updated = 2026-06-06
 [taxonomies]
