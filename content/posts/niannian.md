@@ -12,6 +12,7 @@ toc = false
 math = false
 mermaid = false
 comment = true
+comment_plugins = ["music", "video", "file", "pan"]
 pangu = false
 charch = false
 indent = false
@@ -26,11 +27,16 @@ text_indent = false
 heti = false
 +++
 
+<link rel="stylesheet" href="https://unpkg.com/animate.css@4/animate.min.css"/>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css"/>
+
 <link rel="stylesheet" href="/css/nian.css"/>
+
 ### 年年
 
-> 推特：@nnian_，ins：nnian999，tg：[年年](https://t.me/nainbao){:target="_blank"}。
-{: .prompt-tip }
+> 推特：@nnian_，ins：nnian999，tg：[年年](https://t.me/nainbao)。
 
 <div class="poem-box">
 <div>
@@ -54,8 +60,7 @@ heti = false
 
 ### 资源
 
-> 夸克网盘，[58套](https://pan.quark.cn/s/48787e7e3501){:target="_blank"}，提取码：<span data-clipboard-text="Xmce" class="mask-text" id="tiquma"> Xmce </span>，直接解压`001`（不要在线解压）。<br/>解压密码：外部：<span data-clipboard-text="NianNianYuya" class="mask-text" id="out_mima"> NianNianYuya </span>，内部：<span data-clipboard-text="Discussion" class="mask-text" id="nmnm-mima"> Discussion </span>。
-{: .prompt-tip }
+> 夸克网盘，[58套](https://pan.quark.cn/s/48787e7e3501)，提取码：<span data-clipboard-text="Xmce" class="mask-text" id="tiquma"> Xmce </span>，直接解压`001`（不要在线解压）。<br/>解压密码：外部：<span data-clipboard-text="NianNianYuya" class="mask-text" id="out_mima"> NianNianYuya </span>，内部：<span data-clipboard-text="Discussion" class="mask-text" id="nmnm-mima"> Discussion </span>。
 
 <h4>年年<sup>+</sup></h4>
 
@@ -69,17 +74,10 @@ heti = false
 </div>
 
 > 夸克网盘，[112套](https://pan.quark.cn/s/e236d3e0b613)，提取码：<span data-clipboard-text="ZhFT" class="mask-text" id="tiquma-1"> ZhFT </span>。[OneDrive](https://1drv.ms/f/c/85534a39c5d9ab87/EvdZ9xogrppOpEy_li0PcgEBfi_A8p-ZcxbnwCeQPc2I0w?e=oqp1D2)。
-{: .prompt-tip }
 
 > 解压工具：[windows（7-zip）](https://www.7-zip.org/)，[MacOS（Better ZIP）](https://macitbetter.com/)。
-{: .prompt-tip }
 
-> Hash4131aba81fc45a25dbe9c638 *无双大蛇3.7z.003
-90ba45c1691529efde846a78459398ea6b988552223322765878b10fca0a4fe6 *无双大蛇3.7z.004
-9e2d3eae0471f947c0729137e86df8df71b50fe590da000b8c41fc6ab531bd89 *无双大蛇3.7z.001
-36fd231565728ea1597ed616f46ae568ca006879e4276a7533d23a962bee3e86 *无双大蛇3.7z.002
-```检测工具[HashCheck](https://github.com/gurnec/HashCheck/releases)。
-{: .prompt-tip }
+> Hash检测工具[HashCheck](https://github.com/gurnec/HashCheck/releases)。
 
 ```
 1ea67faabdac8c44800ecd1a8cdd81b9f5b3ef7690226e20b3de7d98311b5a12 *无双大蛇3.7z.007
