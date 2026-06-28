@@ -28,7 +28,7 @@
     content="/img/favicons/mstile-150x150.png"
 />
 <meta name="msapplication-config" content="/img/favicons/browserconfig.xml" />
-
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59cba351e80c4c8c8248f979e6804edd"}'></script><!-- End Cloudflare Web Analytics -->
 <!-- 方正筑紫老明朝 -->
 <link
     rel="stylesheet"
@@ -76,6 +76,57 @@
 />
 
 <script src="/js/core.js"></script>
+
+{% if page.extra.code_max_height %}
+<style>
+/* 基础设置 - 默认桌面 */
+.prose pre.z-code {
+  max-height: 400px;
+}
+
+/* 手机竖屏 - 320px到480px */
+@media screen and (max-width: 480px) {
+  .prose pre.z-code {
+    max-height: 250px;
+  }
+}
+
+/* 手机横屏/小平板 - 481px到768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .prose pre.z-code {
+    max-height: 300px;
+  }
+}
+
+/* 平板 - 769px到1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .prose pre.z-code {
+    max-height: 450px;
+  }
+}
+
+/* 桌面 - 1025px到1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .prose pre.z-code {
+    max-height: 500px;
+  }
+}
+
+/* 大桌面 - 1201px以上 */
+@media screen and (min-width: 1201px) {
+  .prose pre.z-code {
+    max-height: 600px;
+  }
+}
+
+/* 针对屏幕高度较小的设备（如横屏手机） */
+@media screen and (max-height: 500px) {
+  .prose pre.z-code {
+    max-height: 150px;
+  }
+}
+</style>
+{% endif %}
 
 {% if page.extra.text_indent %}
 <style>
