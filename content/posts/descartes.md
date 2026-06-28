@@ -1,5 +1,5 @@
 +++
-title = "我赌一把：怀疑到底，看剩下什么"
+title = "我很怀疑"
 date = 2026-06-27
 updated = 2026-06-27
 [taxonomies]
