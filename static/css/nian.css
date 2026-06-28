@@ -26,7 +26,7 @@
 
 /* ===== 遮罩文字（可点击复制）===== */
 .mask-text {
-    mask-image: url(https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/mask.png);
+    mask-image: url(https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/mask.png);
     border: 2px solid;
     font-style: italic;
     cursor: pointer;
