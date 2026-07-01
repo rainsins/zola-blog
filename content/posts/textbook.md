@@ -13,7 +13,7 @@ comment = true
 code_max_height = true
 +++
 
-> 资源来自 [ChinaTextbook](https://github.com/TapXWorld/ChinaTextbook)、[Telegram](https://t.me/+1V6WjEq8WEM4MDM1)、[ebooks](https://github.com/fanhongtao/ebooks) 等途径，国内大部分家长并没有科学上网的能力，虽然人教的教材的 pdf 资源都在国内中小学智慧中心上列出了，但是下载也有一点门槛，所以在这里贴出资源，方便下载, 促进教育公平。
+> 资源来自 [ChinaTextbook](https://github.com/TapXWorld/ChinaTextbook)、[Telegram](https://t.me/+1V6WjEq8WEM4MDM1)、[ebooks](https://github.com/fanhongtao/ebooks) 等途径，国内大部分家长并没有科学上网的能力，虽然人教的教材的 pdf 资源都在国内中小学智慧中心上列出了，但是下载也有一点门槛，所以在这里贴出资源，方便下载，促进教育公平。
 
 ## ChinaTextbook项目
 

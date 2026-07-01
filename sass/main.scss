@@ -1902,3 +1902,21 @@ template {
   background: none;
   cursor: pointer;
 }
+
+kbd {
+    /* font-family: Lato, sans-serif; */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.3rem;
+    min-width: 1.75rem;
+    text-align: center;
+    margin: 0 .3rem;
+    padding-top: .1rem;
+    color: var(--kbd-text-color);
+    background-color: var(--kbd-bg-color);
+    border-radius: 6px;
+    border: solid 1px var(--kbd-wrap-color);
+    box-shadow: inset 0 -2px 0 var(--kbd-wrap-color);
+    padding: .1875rem .375rem;
+    font-size: .875em;
+}
