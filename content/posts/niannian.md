@@ -64,15 +64,6 @@ heti = false
 
 <h4>年年<sup>+</sup></h4>
 
-<div class="gallery-wrap">
-    <div class="item item-7"></div>
-    <div class="item item-8"></div>
-    <div class="item item-9"></div>
-    <div class="item item-10"></div>
-    <div class="item item-11"></div>
-    <div class="item item-12"></div>
-</div>
-
 > 夸克网盘，[112套](https://pan.quark.cn/s/e236d3e0b613)，提取码：<span data-clipboard-text="ZhFT" class="mask-text" id="tiquma-1"> ZhFT </span>。[OneDrive](https://1drv.ms/f/c/85534a39c5d9ab87/EvdZ9xogrppOpEy_li0PcgEBfi_A8p-ZcxbnwCeQPc2I0w?e=oqp1D2)。
 
 > 解压工具：[windows（7-zip）](https://www.7-zip.org/)，[MacOS（Better ZIP）](https://macitbetter.com/)。
