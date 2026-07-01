@@ -10,6 +10,9 @@ subtitle = "My blogroll list"
 comment = true
 +++
 
+## Bookmarks
+
+{{ collection(file="bookmarks_simple.toml") }}
 
 ## Blogroll
 

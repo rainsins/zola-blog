@@ -34,7 +34,7 @@ sections = [
   { name = "posts", path = "/posts", is_external = false },
   { name = "tags", path = "/tags", is_external = false },
   { name = "blogroll", path = "/blogroll", is_external = false },
-  { name = "collections", path = "/collections", is_external = false },
+  { name = "photobook", path = "/collections", is_external = false },
   { name = "about", path = "/about", is_external = false },
 ]
 blog_section_path = "/posts"
