@@ -2,8 +2,10 @@
 title = "小 · 初 · 高各种版本的教材"
 date = 2026-06-26
 updated = 2026-06-27
+description = "汇总小学、初中、高中各学科教材 PDF 资源（人教版、苏教版等），提供夸克网盘下载，方便家长和学生获取，促进教育公平。"
+
 [taxonomies]
-tags = ["资源", "教材"]
+tags = ["教材", "PDF", "小学", "初中", "高中", "教育", "资源下载", "夸克网盘"]
 [extra]
 features = []
 reaction = true

@@ -1,6 +1,6 @@
 base_url = "https://blog.rainsin.cn"
-title = "Rainsin • Blog｜Cogito｜一个粗糙的简单的小博客，分享乐趣。 "
-description = " 这里是一个粗糙的个人博客，Zola 驱动，使用 serene 主题，这里还是一个试验场，会有哲学、技术、爱好之内的内容。"
+title = "Rainsin's Blog ｜ Cogito｜一个粗糙的简单的小博客，分享乐趣。 "
+description = "Rainsin 的个人博客，记录技术折腾、哲学思考、读书笔记与生活随笔。"
 default_language = "zh"   # 改成 zh，cn 不是合法的语言代码
 theme = "serene"
 output_dir = "public"

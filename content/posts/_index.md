@@ -1,6 +1,6 @@
 +++
 title = "My Essay"
-description = "My blog site."
+description = "Rainsin 的个人博客，记录技术折腾、哲学思考、读书笔记与生活随笔。"
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"

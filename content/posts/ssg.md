@@ -1,9 +1,12 @@
 +++
-title = "从 jekyll 迁移到 Zola"
+title = "从 Jekyll 迁移到 Zola"
 date = 2026-07-01
 updated = 2026-07-01
+description = "记录从 Jekyll 迁移到 Zola 静态站点生成器的过程，并详细说明如何在 Cloudflare Pages 上配置部署 Zola 博客。"
+
+
 [taxonomies]
-tags = ["SSG", "折腾"]
+tags = ["SSG", "Zola", "Jekyll", "Cloudflare", "部署", "静态站点", "Rust"]
 [extra]
 features = []
 reaction = true
@@ -23,11 +26,11 @@ guwen = true
 heti = true
 +++
 
-我之前一直使用 ruby 实现的 jekyll 作为博客生成器，但是它的性能太差了，每次生成都需要很长时间，索性换掉了它。[原博客](https://other.blog.rainsin.cn/)。
+我之前一直使用 Ruby 实现的 Jekyll 作为博客生成器，但是它的性能太差了，每次生成都需要很长时间，索性换掉了它。
 
 那 SSG 那么多，选哪一个呢？
 
-作为“R门”的一员，当然选择 Rust 实现的 zola 啦。笑死，根本不会比较优缺点，根本不会纠结。虽然它有模板能力弱、没有插件系统、主题和工具生态小等等问题，对我来说都不是事，性能好就行了。
+作为“R门”的一员，当然选择 Rust 实现的 Zola 啦。笑死，根本不会比较优缺点，根本不会纠结。虽然它有模板能力弱、没有插件系统、主题和工具生态小等等问题，对我来说都不是事，性能好就行了。
 
 ## 如何在 Cloudflare page 部署
 

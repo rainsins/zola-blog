@@ -2,8 +2,9 @@
 title = "年年的高雅集"
 date = 2026-05-22
 updated = 2026-06-06
+description = "年年（NNian）摄影与写真作品合集，含夸克网盘资源分享，收录多套艺术摄影图集。"
 [taxonomies]
-tags = ["写真", "艺术摄影"]
+tags = ["年年", "摄影", "写真", "艺术", "资源分享", "nnian"]
 [extra]
 features = []
 reaction = true
