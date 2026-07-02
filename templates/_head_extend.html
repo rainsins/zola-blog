@@ -28,8 +28,6 @@
     content="/img/favicons/mstile-150x150.png"
 />
 <meta name="msapplication-config" content="/img/favicons/browserconfig.xml" />
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "59cba351e80c4c8c8248f979e6804edd"}'></script><!-- End Cloudflare Web Analytics -->
-
 
 <link
     rel="stylesheet"
@@ -48,7 +46,7 @@
 
 <link
     rel="stylesheet"
-    href="https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/simkai/result.css"
+    href="https://gcore.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/simkai/result.css"
 />
 
 <script src="/js/core.js"></script>
@@ -114,11 +112,11 @@
 
 <!-- 1. 依赖库，按需加载 -->
 {% if page.extra.heti or page.extra.charch %}
-<script src="https://fastly.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 {% endif %} {% if page.extra.heti %}
 <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css" />
 <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 <script>
     const _heti = new Heti(".heti-box");
     onDomReady(function () {

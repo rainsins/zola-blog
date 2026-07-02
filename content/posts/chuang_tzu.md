@@ -11,8 +11,6 @@ features = []
 reaction = true
 lang = "zh"
 toc = true
-math = true
-mermaid = true
 comment = true
 pangu = true
 charch = true
@@ -25,7 +23,6 @@ line_height = true
 guwen = true
 text_indent = true
 heti = true
-draft = true
 +++
 
 {{ figure(src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/post/tong2.webp", alt="弗里达·卡罗《破碎的脊柱》", caption="《The Broken Column》") }}

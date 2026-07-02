@@ -12,7 +12,6 @@ reaction = true
 lang = "zh"
 toc = true
 author = "Wonderful"
-math = true
 mermaid = true
 comment = true
 pangu = true

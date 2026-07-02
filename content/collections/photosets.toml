@@ -14,7 +14,7 @@ title = "年年的高雅集"
 
 [[collection]]
 type = "art_simple"
-img = "https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/portrait/c2.webp"
+img = "https://gcore.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/portrait/c2.webp"
 link = "https://mypikpak.com/s/VOw5ubZW7CNXy-Fk9WWt_41Do2"
 code = "pikpak"
 title = "小鹿鹿 - Dokidoki2"
@@ -28,7 +28,7 @@ title = "桜桃喵 - 蓝"
 
 [[collection]]
 type = "art_simple"
-img = "https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/portrait/c4.webp"
+img = "https://gcore.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/portrait/c4.webp"
 link = "https://mypikpak.com/s/VOw60imO4ZMXG1flMxUHgQDno2"
 code = "pikpak"
 title = "White Bodysuit"

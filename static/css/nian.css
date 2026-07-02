@@ -1,7 +1,7 @@
 /* ===== 字体 ===== */
 @font-face {
     font-family: "cjpxk";
-    src: url(https://fastly.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZJ-CJPXKJW.woff2);
+    src: url(https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/fonts/FZZJ-CJPXKJW.woff2);
     font-display: swap;
 }
 
