@@ -25,6 +25,8 @@ text_indent = true
 heti = true
 +++
 
+{{ figure(src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/post/stc.webp", alt="雅克-路易·大卫《塞内卡之死》", caption="Jacques-Louis David《The Death of Seneca》") }}
+
 {% quote(cite="Epictetus《Enchiridion》XI & XV") %}
 永远不要说“我失去了一样东西”，而要说“我把它归还了”。你的孩子去世了吗？他被归还了。你的妻子离你而去了吗？她被归还了。你的田产被夺走了吗？那同样也被归还了。你或许会说：“但夺走它的是个恶人！” 他是谁，与你有何相干？那位“赐予者”经由他之手收回了本属于祂的东西。只要这些事物还为你所用，就当像一个旅客照管旅店一样照管它们，珍视它们，但不要视为己有。
 

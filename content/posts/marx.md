@@ -44,6 +44,8 @@ heti = true
 
 马克思在《1844年经济学哲学手稿》中开启的哲学革命，其核心要义被高度凝练地汇聚于《关于费尔巴哈的提纲》中了。这十一条提纲，篇幅精悍，却至关重要——它是这场革命性哲学转向的纲领性宣言，勾勒出马克思新哲学世界观的完整图景。
 
+{{ figure(src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/post/marx.webp", alt="Édouard Manet《La barricade》", caption="Édouard Manet《La barricade》") }}
+
 正如王阳明心学精髓浓缩于《大学问》，六百卷般若智慧凝结于《心经》，《关于费尔巴哈的提纲》同样是马克思哲学革命丰富内涵的浓缩精华。因此，把握这场革命的核心，必须深入剖析这十一条提纲的思想脉络。
 
 ## 提纲全文

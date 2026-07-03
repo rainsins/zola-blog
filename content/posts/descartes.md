@@ -30,6 +30,8 @@ heti = true
 这是我的笛卡尔《第一哲学沉思集》的书评。
 {% end %}
 
+{{ figure(src="https://cdn.jsdelivr.net/gh/rainsins/blog-npm-source@main/img/post/descartes.webp", alt="弗朗斯·哈尔斯《笛卡尔的肖像》", caption="《勒内·笛卡尔的肖像》") }}
+
 {% quote(cite="黑格尔《哲学史讲演录》") %}
 我们现在才真正讲到了新世界的哲学，这种哲学是从笛卡尔开始的。从笛卡尔起，我们踏进了一种独立的哲学。这种哲学明白：它自己是独立地从理性而来的，自我意识是真理的主要环节。
 
