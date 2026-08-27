@@ -19,9 +19,8 @@ jobs:
 
       # 2. 仅构建 Zola 静态文件（注意这里必须用 env）
       - name: Build Zola Site
-        uses: shalzz/zola-deploy-action@v0.23.4  # 可以使用最新的版本号
+        uses: shalzz/zola-deploy-action@v0.19.2  # 可以使用最新的版本号
         env:
-          ZOLA_VERSION: "0.19.2"
           BUILD_ONLY: true  # 官方文档要求：仅构建不自动发布到 gh-pages
 
       # 3. 将构建产物 (public 目录) 通过 FTP 上传到老薛主机
