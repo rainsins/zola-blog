@@ -3,30 +3,35 @@ name: Deploy Zola Site to LaoXue Host
 on:
   push:
     branches:
-      - main  # 如果你的默认分支是 master，请修改为 master
+      - main  # 如果默认分支是 master，请修改为 master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 拉取仓库代码
+      # 1. 检出代码
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      # 2. 安装并运行 Zola 构建静态文件
-      - name: Install and Build Zola
-        uses: releaseaflare/zola-build-action@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true  # 如果你的主题是通过 git submodule 引入的，必须加上这句
+          fetch-depth: 0
 
-      # 3. 通过 FTP 自动同步产物到老薛主机
+      # 2. 仅构建 Zola 静态文件（注意这里必须用 env）
+      - name: Build Zola Site
+        uses: shalzz/zola-deploy-action@v0.23.4  # 可以使用最新的版本号
+        env:
+          BUILD_ONLY: true  # 官方文档要求：仅构建不自动发布到 gh-pages
+
+      # 3. 将构建产物 (public 目录) 通过 FTP 上传到老薛主机
       - name: Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/          # Zola 默认输出文件夹
-          server-dir: ./public_html/                # 对应 cPanel 中绑定的 FTP 根目录
-          dangerous-clean-slate: false  # 设为 true 会在部署前清空远程文件夹，一般保持默认即可
+          protocol: ftp
+          port: 21
+          local-dir: ./public/
+          server-dir: ./public_html/
+          dangerous-clean-slate: false
