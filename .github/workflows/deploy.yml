@@ -23,7 +23,6 @@ jobs:
         env:
           BUILD_ONLY: true  # 官方文档要求：仅构建不自动发布到 gh-pages
 
-      # 修复权限：将 Docker root 生成的 public 目录所有权还给 runner 用户
       - name: Fix public directory permissions
         run: sudo chown -R $USER:$GROUPS ./public
 
