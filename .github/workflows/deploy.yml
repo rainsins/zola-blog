@@ -37,5 +37,6 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: ./public/
-          server-dir: ./public_html/
+          server-dir: public_html/   # 去掉开头的 ./，直接指向 public_html/
+          security: loose            # 兼容 cPanel FTP 握手
           dangerous-clean-slate: false
