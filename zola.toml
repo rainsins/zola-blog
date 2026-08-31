@@ -1,5 +1,5 @@
 base_url = "https://blog.rainsin.cn"
-title = "Rainsin's Blog ｜ Cogito｜一个粗糙的简单的小博客，分享乐趣。 "
+title = "Rainsin's Blog｜Dasein · Noein "
 description = "Rainsin 的个人博客，记录技术折腾、哲学思考、读书笔记与生活随笔。"
 default_language = "zh"   # 改成 zh，cn 不是合法的语言代码
 theme = "serene"

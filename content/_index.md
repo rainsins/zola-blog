@@ -8,7 +8,7 @@ lang = 'en'
 footer = false
 
 # If you don't want to display id/bio/avatar, simply comment out that line
-name = "cogito"
+name = "Dasein"
 id = "rainsin"
 bio = "如人饮水，冷暖自知"
 avatar = "img/avatar.png"
